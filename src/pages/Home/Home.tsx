@@ -2,7 +2,7 @@ import styles from "./Home.module.scss";
 
 export const Home = ({...props}) => {
     return (
-        <main className={styles.homeContainer}>
+        <div className={styles.homeContainer}>
             <div className={styles.heroContainer}>
                 <div className={styles.heroHeader}>
                     <div className={styles.metaInfo}>
@@ -17,6 +17,6 @@ export const Home = ({...props}) => {
                     <p className={styles.description}>{props.projectDesc}</p>
                 </div>
             </div>
-        </main>
-    )
-}
+        </div>
+    );
+};

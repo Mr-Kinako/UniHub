@@ -1,0 +1,23 @@
+.footerContainer {
+    --border-color: rgba(177, 130, 227, 0.15);
+    position: sticky;
+    bottom: 0;
+    width: 100%;
+    display: flex;
+    background-color: rgb(53, 53, 56);
+    padding: 8px 0;
+    border-top: 1px solid var(--border-color);
+    box-shadow: 0 -8px 16px 1px var(--border-color);
+
+    .footerContent {
+        display: flex;
+        flex-direction: column;
+        font-size: clamp(0.9rem, 2.7vw, 1.2rem);
+        color: rgba(255, 255, 255, 0.8);
+        margin: 0 auto;
+
+        .authors {
+            font-size: clamp(0.84rem, 2.7vw, 1.184rem);
+        }
+    }
+}
